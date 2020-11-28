@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Nav from "./Nav"
+import Footer from "./Footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -15,9 +16,7 @@ const Layout = ({ children }) => {
     <>
       <Nav />
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with &#9825; by Jen Beltran
-      </footer>
+      <Footer />
     </>
   )
 }
