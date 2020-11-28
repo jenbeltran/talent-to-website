@@ -1,19 +1,17 @@
 import styled from "styled-components"
-
 import { breakpoints, colors } from "../../theme/constants"
 
 const { tablet, desktop } = breakpoints
-const { skyBlue, black } = colors
+const { greyBlue, darkBlue } = colors
 
-export const FooterSection = styled.section`
+export const SponsorUsSection = styled.section`
   @media (min-width: ${desktop}px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: ${skyBlue};
+    background-color: ${greyBlue};
     position: absolute;
-    bottom: 0;
     margin: auto;
     width: 100%;
   }
@@ -21,8 +19,22 @@ export const FooterSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: ${skyBlue};
+    background-color: ${greyBlue};
     text-align: center;
+    padding-bottom: 1rem;
+  }
+`
+export const Headline = styled.p`
+  @media (min-width: ${desktop}px) {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-left: 10rem;
+    color: ${darkBlue};
+  }
+  @media (max-width: ${tablet}px) {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: ${darkBlue};
   }
 `
 
@@ -30,20 +42,6 @@ export const ContactInfo = styled.p`
   font-size: 1rem;
 
   @media (min-width: ${desktop}px) {
-    padding-left: 3rem;
-  }
-`
-
-export const StyledAnchor = styled.a`
-  text-decoration: none;
-  color: ${black};
-`
-
-export const SocialIcon = styled.img`
-  height: 35px;
-  padding: 1rem;
-
-  @media (min-width: ${desktop}px) {
-    padding-right: 3rem;
+    padding-right: 10rem;
   }
 `
