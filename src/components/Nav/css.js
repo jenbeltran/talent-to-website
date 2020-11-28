@@ -44,7 +44,7 @@ export const StyledNavBrand = styled.div`
   img {
     width: auto;
     display: block;
-    height: 1rem;
+    height: 6rem;
     @media screen and (min-width: ${desktop}px) {
       height: 6rem;
     }
@@ -195,7 +195,8 @@ export const Tab = styled.p`
     margin: 0;
     padding: 0;
     &:hover {
-      border-bottom: 2px solid ${black};
+      text-decoration: underline;
+      color: ${black};
     }
   }
 `
