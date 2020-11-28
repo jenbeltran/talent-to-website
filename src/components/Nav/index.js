@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import logo from "../../images/logo.png"
 
 import {
@@ -7,6 +6,7 @@ import {
   StyledNavBrand,
   StyleNavLinks,
   NavListItem,
+  StyledLink,
   CheckboxInput,
   CheckboxLabel,
   MobileNavIcon,
@@ -28,27 +28,27 @@ const Nav = () => {
 
       <StyleNav id="#nav">
         <StyledNavBrand id="icon">
-          <Link to="/" aria-label="Click to navigate to homepage">
+          <StyledLink to="/" aria-label="Click to navigate to homepage">
             <img src={logo} alt="TalentTO Logo" />
-          </Link>
+          </StyledLink>
         </StyledNavBrand>
 
         <NavElement>
           <StyleNavLinks>
             <NavListItem>
-              <Link to="/about-us">
+              <StyledLink to="/about-us">
                 <Tab>About Us</Tab>
-              </Link>
+              </StyledLink>
             </NavListItem>
             <NavListItem>
-              <Link to="/events">
+              <StyledLink to="/events">
                 <Tab>Events</Tab>
-              </Link>
+              </StyledLink>
             </NavListItem>
             <NavListItem>
-              <Link to="/join-us">
+              <StyledLink to="/join-us">
                 <Tab>Join Us</Tab>
-              </Link>
+              </StyledLink>
             </NavListItem>
           </StyleNavLinks>
         </NavElement>
