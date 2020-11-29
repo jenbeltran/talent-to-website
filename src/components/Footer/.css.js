@@ -2,11 +2,11 @@ import styled from "styled-components"
 
 import { breakpoints, colors } from "../../theme/constants"
 
-const { tablet, desktop } = breakpoints
+const { tablet } = breakpoints
 const { skyBlue, black } = colors
 
 export const FooterSection = styled.section`
-  @media (min-width: ${desktop}px) {
+  @media (min-width: ${tablet}px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,19 +15,18 @@ export const FooterSection = styled.section`
     margin: auto;
     width: 100%;
   }
-  @media (max-width: ${tablet}px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: ${skyBlue};
-    text-align: center;
-  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: ${skyBlue};
+  text-align: center;
 `
 
 export const ContactInfo = styled.p`
   font-size: 1rem;
 
-  @media (min-width: ${desktop}px) {
+  @media (min-width: ${tablet}px) {
     padding-left: 3rem;
   }
 `
@@ -41,7 +40,7 @@ export const SocialIcon = styled.img`
   height: 35px;
   padding: 1rem;
 
-  @media (min-width: ${desktop}px) {
+  @media (min-width: ${tablet}px) {
     padding-right: 3rem;
   }
 `
