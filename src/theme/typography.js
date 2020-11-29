@@ -1,14 +1,13 @@
 import styled from "styled-components"
 import { colors } from "./constants"
 
-const { primaryGreen, lightBlack } = colors
+const { darkBlue } = colors
 
 export const H1 = styled.h1`
-  font-family: "Rubik", sans-serif;
   font-weight: 900;
   margin-bottom: 20px;
   margin-top: 0;
-  color: ${primaryGreen};
+  color: ${darkBlue};
   font-size: 3rem;
 
   @media screen and (min-width: 769px) {
@@ -17,9 +16,8 @@ export const H1 = styled.h1`
 `
 
 export const H2 = styled.h2`
-  font-family: "Rubik", sans-serif;
   font-weight: 900;
-  color: ${primaryGreen};
+  color: ${darkBlue};
   font-size: 2.5rem;
   text-align: center;
   padding: 0 2rem;
@@ -31,8 +29,7 @@ export const H2 = styled.h2`
 `
 
 export const H3 = styled.h3`
-  font-family: "Rubik", sans-serif;
   font-size: 1.75rem;
   font-weight: 500;
-  color: ${lightBlack};
+  color: ${darkBlue};
 `
