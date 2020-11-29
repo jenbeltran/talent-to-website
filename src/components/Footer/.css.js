@@ -12,8 +12,6 @@ export const FooterSection = styled.section`
     justify-content: space-between;
     align-items: center;
     background-color: ${skyBlue};
-    position: absolute;
-    bottom: 0;
     margin: auto;
     width: 100%;
   }

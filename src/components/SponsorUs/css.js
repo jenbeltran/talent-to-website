@@ -11,7 +11,6 @@ export const SponsorUsSection = styled.section`
     justify-content: space-between;
     align-items: center;
     background-color: ${greyBlue};
-    position: absolute;
     margin: auto;
     width: 100%;
   }
