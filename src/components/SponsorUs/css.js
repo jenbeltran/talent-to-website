@@ -20,7 +20,6 @@ export const SponsorUsSection = styled.section`
   align-items: center;
   background-color: ${greyBlue};
   text-align: center;
-  padding-bottom: 1rem;
 `
 export const Headline = styled.p`
   @media (min-width: ${tablet}px) {

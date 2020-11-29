@@ -1,10 +1,14 @@
 import styled from "styled-components"
 import { H2 } from "../../theme/typography"
 
+import { colors } from "../../theme/constants"
+
+const { greyBlue } = colors
+
 const StorySection = styled.section`
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #f5f5f5;
+  background: ${greyBlue};
   text-align: center;
 `
 
@@ -29,10 +33,9 @@ const Storydiv = styled.div`
 `
 
 const Storyp = styled.p`
-line-height: 30px;
-color: #333333
-text-align: center;
-padding: 20px 50px 0px 50px
+  line-height: 30px;
+  text-align: center;
+  padding: 20px 50px 0px 50px;
 `
 
 export { StorySection, Storyh1, Storydiv, Storyp }

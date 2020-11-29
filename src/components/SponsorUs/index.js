@@ -8,7 +8,7 @@ const SponsorUs = () => {
       <Headline>Sponsor Us</Headline>
       <ContactInfo>
         For sponsorship packages, please reach out to
-        talentTOCommunity@gmail.com
+        TalentTOCommunity@gmail.com
       </ContactInfo>
     </SponsorUsSection>
   )
