@@ -3,17 +3,17 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import OurStory from "../components/OurStory"
+import HeaderPicture from "../components/HeaderPicture"
 import SectionTitle from "../components/SectionTitles"
 import Titles from "../components/SectionTitles/data"
 import CardImage from "../components/CardImage"
 import CardImageTwo from "../components/CardImageTwo"
 import WaysToJoin from "../components/CardImage/data"
 
-const IndexPage = () => (
+const JoinUsPage = () => (
   <Layout>
     <SEO title="Home" />
-    <OurStory />
+    <HeaderPicture />
     <SectionTitle headline={Titles[1].headline} />
     <CardImage
       photo={WaysToJoin[0].photo}
@@ -36,4 +36,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default JoinUsPage
