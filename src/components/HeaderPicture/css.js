@@ -1,16 +1,19 @@
 import styled from "styled-components"
+
+import Image from "../../images/event.jpg"
 import { breakpoints } from "../../theme/constants"
 
 const { tablet } = breakpoints
 
-export const HeaderPhoto = styled.img`
+export const HeaderPhoto = styled.section`
   @media (min-width: ${tablet}px) {
-    width: 100%;
-    height: 220px;
-  }
+    position: relative;
+    margin: auto;
+    display: flex;
+    padding: 8rem;
 
-  height: 0%;
-  width: 0%;
-  margin: auto;
-  position: relative;
+    background-image: url(${Image});
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 `

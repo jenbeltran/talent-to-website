@@ -1,4 +1,4 @@
-import Event from "../../images/event.jpg"
+import Event from "../../images/event-webinar.png"
 
 const Events = [
   {
