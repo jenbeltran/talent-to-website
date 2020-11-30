@@ -34,6 +34,10 @@ export const ContactInfo = styled.p`
 export const StyledAnchor = styled.a`
   text-decoration: none;
   color: ${black};
+
+  &:hover {
+    cursor: pointer;
+  }
 `
 
 export const SocialIcon = styled.img`

@@ -9,7 +9,7 @@ import HeaderPicture from "../components/HeaderPicture"
 
 const AboutUsPage = () => (
   <Layout>
-    <SEO title="About-Us" />
+    <SEO title="About Us" />
     <HeaderPicture />
     <OurStory />
     <Team />

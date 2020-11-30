@@ -12,7 +12,7 @@ import WaysToJoin from "../components/CardImage/data"
 
 const JoinUsPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Join Us" />
     <HeaderPicture />
     <SectionTitle headline={Titles[1].headline} />
     <CardImage
