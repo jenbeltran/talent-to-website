@@ -53,4 +53,8 @@ export const Button = styled.button`
   border-radius: 5px;
   width: 75px;
   height: 45px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `
