@@ -3,14 +3,14 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import UpcomingEventCard from "../components/Card"
-import { UpcomingEvent } from "../components/Card/data.js"
+import UpcomingEventCard from "../components/UpcomingEvents"
+import { UpcomingEvent } from "../components/UpcomingEvents/data.js"
 
 import SectionTitle from "../components/SectionTitles"
 import Titles from "../components/SectionTitles/data"
-import CardImageThree from "../components/CardImageThree"
-import CardImageFour from "../components/CardImageFour"
-import Events from "../components/CardImageThree/data"
+import PastEvents from "../components/PastEvents"
+import PastEventsTwo from "../components/PastEventsTwo"
+import EventData from "../components/PastEvents/data"
 
 const EventsPage = () => (
   <Layout>
@@ -22,28 +22,22 @@ const EventsPage = () => (
       headlineTwo={UpcomingEvent.headlineTwo}
       pointOne={UpcomingEvent.pointOne}
       pointTwo={UpcomingEvent.pointTwo}
-      pointThree={UpcomingEvent.pointThree}
+      point={UpcomingEvent.point}
       buttonText={UpcomingEvent.buttonText}
       buttonLink={UpcomingEvent.buttonLink}
     />
     <SectionTitle headline={Titles[0].headline} />
-    <CardImageThree
-      photo={Events[0].photo}
-      alt={Events[0].alt}
-      title={Events[0].title}
-      description={Events[0].description}
+    <PastEvents
+      photo={EventData[0].photo}
+      alt={EventData[0].alt}
+      title={EventData[0].title}
+      description={EventData[0].description}
     />
-    <CardImageFour
-      photo={Events[0].photo}
-      alt={Events[0].alt}
-      title={Events[0].title}
-      description={Events[0].description}
-    />
-    <CardImageThree
-      photo={Events[0].photo}
-      alt={Events[0].alt}
-      title={Events[0].title}
-      description={Events[0].description}
+    <PastEventsTwo
+      photo={EventData[0].photo}
+      alt={EventData[0].alt}
+      title={EventData[0].title}
+      description={EventData[0].description}
     />
   </Layout>
 )
