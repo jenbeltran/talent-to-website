@@ -23,6 +23,7 @@ const CardImage = props => {
     buttonLink,
     buttonText,
   } = props
+
   return (
     <CardSection>
       <Wrapper>

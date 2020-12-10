@@ -2,31 +2,49 @@ import React from "react"
 
 import linkedin from "../../images/linkedin.png"
 
-import { FooterSection, ContactInfo, StyledAnchor, SocialIcon } from "./.css.js"
+import {
+  SponsorUsSection,
+  Headline,
+  ContactInfo,
+  FooterSection,
+  JenInfo,
+  StyledAnchor,
+  SocialIcon,
+} from "./.css.js"
 
 const Footer = () => {
   return (
-    <FooterSection id="contact">
-      <ContactInfo>
-        {" "}
-        TalentTO © {new Date().getFullYear()} - Built with &#9825; by{" "}
-        <StyledAnchor
-          href="https://www.linkedin.com/in/jenfbeltran/"
+    <div>
+      <SponsorUsSection>
+        <Headline>Sponsor Us</Headline>
+        <ContactInfo>
+          For sponsorship packages, please reach out to
+          TalentTOCommunity@gmail.com
+        </ContactInfo>
+      </SponsorUsSection>
+
+      <FooterSection id="contact">
+        <JenInfo>
+          {" "}
+          TalentTO © {new Date().getFullYear()} - Built with &#9825; by{" "}
+          <StyledAnchor
+            href="https://www.linkedin.com/in/jenfbeltran/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Jen Beltran
+          </StyledAnchor>
+        </JenInfo>
+
+        <a
+          href="https://www.linkedin.com/company/talentto/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Jen Beltran
-        </StyledAnchor>
-      </ContactInfo>
-
-      <a
-        href="https://www.linkedin.com/company/talentto/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <SocialIcon src={linkedin} />
-      </a>
-    </FooterSection>
+          <SocialIcon src={linkedin} />
+        </a>
+      </FooterSection>
+    </div>
   )
 }
 
