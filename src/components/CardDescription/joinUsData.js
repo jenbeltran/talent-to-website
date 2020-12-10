@@ -7,6 +7,8 @@ const WaysToJoin = [
     title: "Join Our Slack Community",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    typeform:
+      "https://form.typeform.com/to/oa9dP7Dq?typeform-medium=embed-snippet",
   },
   {
     photo: Event,
@@ -14,6 +16,8 @@ const WaysToJoin = [
     title: "Become a Speaker for our Podcast and Panels",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    typeform:
+      "https://form.typeform.com/to/z2udGtF6?typeform-medium=embed-snippet",
   },
 ]
 

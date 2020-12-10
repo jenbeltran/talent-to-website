@@ -1,16 +1,14 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 
 import UpcomingEventCard from "../components/UpcomingEvents"
-import { UpcomingEvent } from "../components/UpcomingEvents/data.js"
+import { UpcomingEvent } from "../components/UpcomingEvents/data"
 
-import SectionTitle from "../components/SectionTitles"
-import Titles from "../components/SectionTitles/data"
-import PastEvents from "../components/PastEvents"
-import PastEventsTwo from "../components/PastEventsTwo"
-import EventData from "../components/PastEvents/data"
+import PastEvents from "../components/CardDescription"
+import Data from "../components/CardDescription/pastEventsData"
+import Headline from "../components/CardDescription/headlineData"
 
 const EventsPage = () => (
   <Layout>
@@ -22,22 +20,29 @@ const EventsPage = () => (
       headlineTwo={UpcomingEvent.headlineTwo}
       pointOne={UpcomingEvent.pointOne}
       pointTwo={UpcomingEvent.pointTwo}
-      point={UpcomingEvent.point}
       buttonText={UpcomingEvent.buttonText}
       buttonLink={UpcomingEvent.buttonLink}
     />
-    <SectionTitle headline={Titles[0].headline} />
+
     <PastEvents
-      photo={EventData[0].photo}
-      alt={EventData[0].alt}
-      title={EventData[0].title}
-      description={EventData[0].description}
+      sectionName={"events"}
+      headline={Headline[1].headline}
+      photo={Data[0].photo}
+      alt={Data[0].alt}
+      title={Data[0].title}
+      description={Data[0].description}
+      photoTwo={Data[0].photo}
+      altTwo={Data[0].alt}
+      titleTwo={Data[0].title}
+      descriptionTwo={Data[0].description}
     />
-    <PastEventsTwo
-      photo={EventData[0].photo}
-      alt={EventData[0].alt}
-      title={EventData[0].title}
-      description={EventData[0].description}
+    <PastEvents
+      sectionName={"events"}
+      headline={"remove"}
+      photo={Data[0].photo}
+      alt={Data[0].alt}
+      title={Data[0].title}
+      description={Data[0].description}
     />
   </Layout>
 )

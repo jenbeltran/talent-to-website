@@ -1,8 +1,8 @@
-import Event from "../../images/event-webinar.png"
+import PhotoOne from "../../images/event-webinar.png"
 
 const Events = [
   {
-    photo: Event,
+    photo: PhotoOne,
     alt: "TalentTO attendees at an event",
     title: "TalentTO Event",
     description:

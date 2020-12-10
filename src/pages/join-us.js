@@ -1,31 +1,32 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 
 import HeaderPicture from "../components/HeaderPicture"
-import SectionTitle from "../components/SectionTitles"
-import Titles from "../components/SectionTitles/data"
-import WaysToJoin from "../components/WaysToJoin"
-import WaysToJoinTwo from "../components/WaysToJoinTwo"
-import Data from "../components/WaysToJoin/data"
+
+import JoinUs from "../components/CardDescription"
+import Data from "../components/CardDescription/joinUsData"
+import Headline from "../components/CardDescription/headlineData"
 
 const JoinUsPage = () => (
   <Layout>
     <SEO title="Join Us" />
     <HeaderPicture />
-    <SectionTitle headline={Titles[1].headline} />
-    <WaysToJoin
+
+    <JoinUs
+      sectionName={"join-us"}
+      headline={Headline[0].headline}
       photo={Data[0].photo}
       alt={Data[0].alt}
       title={Data[0].title}
       description={Data[0].description}
-    />
-    <WaysToJoinTwo
-      photo={Data[1].photo}
-      alt={Data[1].alt}
-      title={Data[1].title}
-      description={Data[1].description}
+      typeform={Data[0].typeform}
+      photoTwo={Data[1].photo}
+      altTwo={Data[1].alt}
+      titleTwo={Data[1].title}
+      descriptionTwo={Data[1].description}
+      typeformTwo={Data[1].typeform}
     />
   </Layout>
 )

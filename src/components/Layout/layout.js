@@ -7,19 +7,17 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Nav from "./Nav"
-import SponsorUs from "./SponsorUs"
-import Footer from "./Footer"
+import Nav from "../Nav"
+import Footer from "../Footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div>
       <Nav />
       <main>{children}</main>
-      <SponsorUs />
       <Footer />
-    </>
+    </div>
   )
 }
 

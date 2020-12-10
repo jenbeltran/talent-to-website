@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Jen Beltran",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^2.25.3",
     "gatsby-image": "^2.4.21",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -12,6 +13,7 @@
     "gatsby-plugin-offline": "^3.3.3",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-sharp": "^2.7.1",
+    "gatsby-plugin-styled-components": "^3.5.0",
     "gatsby-source-filesystem": "^2.4.2",
     "gatsby-transformer-sharp": "^2.5.21",
     "prop-types": "^15.7.2",
