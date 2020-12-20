@@ -3,8 +3,8 @@ import React from "react"
 import TextParagraph from "../TextParagraph"
 
 import {
-  TitleDiv,
   CardSection,
+  TitleDiv,
   CardPhoto,
   CardPhotoMin,
   CardPhotoMax,
@@ -21,25 +21,35 @@ const CardDescription = props => {
     photo,
     alt,
     title,
+    dashTitle,
+    subtitle,
     link,
     description,
+    secondDescription,
     typeform,
     photoTwo,
     altTwo,
     titleTwo,
+    dashTitleTwo,
+    subtitleTwo,
     linkTwo,
     descriptionTwo,
+    secondDescriptionTwo,
+    thirdDescriptionTwo,
     typeformTwo,
   } = props
 
   return (
     <div>
+      {/* If you use headline={"remove"}, it will remove the headline so you can reuse the 
+      photo/card components without the title  */}
       {headline === "remove" ? null : (
         <TitleDiv>
           <H2>{headline}</H2>
         </TitleDiv>
       )}
 
+      {/* If the section is "about-us", the photos are rounded */}
       <CardSection>
         {sectionName === "about-us" ? (
           <RoundPhoto src={photo} alt={alt} />
@@ -50,35 +60,42 @@ const CardDescription = props => {
         <TextParagraph
           sectionName={sectionName}
           title={title}
+          dashTitle={dashTitle}
+          subtitle={subtitle}
           link={link}
           description={description}
+          secondDescription={secondDescription}
           typeform={typeform}
         />
       </CardSection>
 
-      {headline === "remove" ? null : (
-        <CardSection>
-          {sectionName === "about-us" ? (
-            <RoundPhotoMin src={photoTwo} alt={altTwo} />
-          ) : (
-            <CardPhotoMin src={photoTwo} alt={altTwo} />
-          )}
+      {/* If the section is "about-us", the photos are rounded */}
+      <CardSection>
+        {sectionName === "about-us" ? (
+          <RoundPhotoMin src={photoTwo} alt={altTwo} />
+        ) : (
+          <CardPhotoMin src={photoTwo} alt={altTwo} />
+        )}
 
-          <TextParagraph
-            sectionName={sectionName}
-            title={titleTwo}
-            description={descriptionTwo}
-            typeform={typeformTwo}
-            link={linkTwo}
-          />
+        <TextParagraph
+          sectionName={sectionName}
+          title={titleTwo}
+          dashTitle={dashTitleTwo}
+          subtitle={subtitleTwo}
+          description={descriptionTwo}
+          secondDescription={secondDescriptionTwo}
+          thirdDescription={thirdDescriptionTwo}
+          typeform={typeformTwo}
+          link={linkTwo}
+        />
 
-          {sectionName === "about-us" ? (
-            <RoundPhotoMax src={photoTwo} alt={altTwo} />
-          ) : (
-            <CardPhotoMax src={photoTwo} alt={altTwo} />
-          )}
-        </CardSection>
-      )}
+        {/* If the section is "about-us", the photos are rounded */}
+        {sectionName === "about-us" ? (
+          <RoundPhotoMax src={photoTwo} alt={altTwo} />
+        ) : (
+          <CardPhotoMax src={photoTwo} alt={altTwo} />
+        )}
+      </CardSection>
     </div>
   )
 }

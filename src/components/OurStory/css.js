@@ -1,41 +1,35 @@
 import styled from "styled-components"
-import { H2 } from "../../theme/typography"
 
-import { colors } from "../../theme/constants"
+import { breakpoints, colors } from "../../theme/constants"
 
+const { tablet } = breakpoints
 const { greyBlue } = colors
 
-const StorySection = styled.section`
-  padding-top: 60px;
-  padding-bottom: 60px;
+export const StorySection = styled.section`
+  padding: 2rem;
   background: ${greyBlue};
   text-align: center;
-`
 
-const Storyh1 = styled(H2)`
-  margin: 0;
-`
-
-const Storydiv = styled.div`
-  @media (min-width: 770px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 769px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  @media (min-width: ${tablet}px) {
+    font-size: 17px;
+    padding: 3rem 7rem 5rem 7rem;
   }
 `
 
-const Storyp = styled.p`
+export const Description = styled.p`
   line-height: 30px;
   text-align: center;
-  padding: 20px 50px 0px 50px;
+  padding: 0.5rem 0rem 0.5rem 0rem;
 `
 
-export { StorySection, Storyh1, Storydiv, Storyp }
+export const Quote = styled.p`
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 2rem 0rem 2rem 0rem;
+`
+
+export const StyledDiv = styled.div`
+  padding-top: 2rem;
+`

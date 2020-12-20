@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   }
 
   margin: auto;
-  padding: 3rem;
+  padding: 2rem;
   text-align: center;
 `
 
