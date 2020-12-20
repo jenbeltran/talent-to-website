@@ -4,6 +4,19 @@ import { breakpoints, colors } from "../../theme/constants"
 const { tablet } = breakpoints
 const { darkBlue, lightGrey, black } = colors
 
+export const CardSection = styled.section`
+  @media (min-width: ${tablet}px) {
+    background-color: ${lightGrey};
+    position: relative;
+    display: flex;
+    margin: auto;
+    padding: 1rem 5rem 4rem 5rem;
+  }
+  padding-bottom: 1rem;
+  margin: auto;
+  background-color: ${lightGrey};
+`
+
 export const TitleDiv = styled.div`
   @media (min-width: ${tablet}px) {
     display: flex;
@@ -17,19 +30,6 @@ export const TitleDiv = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: ${lightGrey};
-`
-
-export const CardSection = styled.section`
-  @media (min-width: ${tablet}px) {
-    background-color: ${lightGrey};
-    position: relative;
-    display: flex;
-    margin: auto;
-    padding: 2rem 5rem 3rem 5rem;
-  }
-
-  margin: auto;
   background-color: ${lightGrey};
 `
 

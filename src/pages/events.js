@@ -36,14 +36,6 @@ const EventsPage = () => (
       titleTwo={Data[0].title}
       descriptionTwo={Data[0].description}
     />
-    <PastEvents
-      sectionName={"events"}
-      headline={"remove"}
-      photo={Data[0].photo}
-      alt={Data[0].alt}
-      title={Data[0].title}
-      description={Data[0].description}
-    />
   </Layout>
 )
 
