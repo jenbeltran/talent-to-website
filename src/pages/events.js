@@ -31,10 +31,12 @@ const EventsPage = () => (
       alt={Data[0].alt}
       title={Data[0].title}
       description={Data[0].description}
-      photoTwo={Data[0].photo}
-      altTwo={Data[0].alt}
-      titleTwo={Data[0].title}
-      descriptionTwo={Data[0].description}
+      link={Data[0].link}
+      photoTwo={Data[1].photo}
+      altTwo={Data[1].alt}
+      titleTwo={Data[1].title}
+      descriptionTwo={Data[1].description}
+      linkTwo={Data[1].link}
     />
   </Layout>
 )

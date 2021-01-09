@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import Image from "../../images/event.jpg"
+import Image from "../../images/studying-together.jpg"
 import { breakpoints } from "../../theme/constants"
 
 const { tablet } = breakpoints

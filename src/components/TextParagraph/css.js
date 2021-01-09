@@ -6,8 +6,7 @@ const { darkBlue, lightBlue } = colors
 
 export const Wrapper = styled.div`
   @media (min-width: ${tablet}px) {
-    padding-left: 3rem;
-    padding-top: 1rem;
+    padding: 1rem 3rem 0 2rem;
     margin: auto;
   }
 

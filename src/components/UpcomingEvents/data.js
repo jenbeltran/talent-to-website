@@ -1,8 +1,8 @@
-import EventPhoto from "../../images/event.jpg"
+import EventPhoto from "../../images/conference.jpg"
 
 const UpcomingEvent = {
   photo: EventPhoto,
-  alt: "Members at a TalentTO event",
+  alt: "Members raising hands at an event",
   headline: "Upcoming Events",
   headlineTwo: "Connect with us on Social Media",
   pointOne:

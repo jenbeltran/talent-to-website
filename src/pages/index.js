@@ -27,6 +27,7 @@ const IndexPage = () => (
       altTwo={Data[1].alt}
       titleTwo={Data[1].title}
       descriptionTwo={Data[1].description}
+      secondDescriptionTwo={Data[1].descriptionTwo}
       linkTwo={Data[1].link}
       typeformTwo={Data[1].typeform}
     />

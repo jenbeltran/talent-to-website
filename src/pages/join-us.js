@@ -26,6 +26,7 @@ const JoinUsPage = () => (
       altTwo={Data[1].alt}
       titleTwo={Data[1].title}
       descriptionTwo={Data[1].description}
+      secondDescriptionTwo={Data[1].descriptionTwo}
       typeformTwo={Data[1].typeform}
     />
   </Layout>
