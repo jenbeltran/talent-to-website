@@ -1,10 +1,10 @@
-import PhotoOne from "../../images/women-chatting.jpg"
+import PhotoOne from "../../images/hands.jpg"
 import PhotoTwo from "../../images/raised-hands.jpg"
 
 const WaysToJoin = [
   {
     photo: PhotoOne,
-    alt: "Women chatting at an event",
+    alt: "People joining hands",
     title: "Join Our Slack Community",
     description:
       "Connect, learn, and grow with TalentTO community. Join our Slack group and connect with like-minded Talent Professionals in the GTA.",
