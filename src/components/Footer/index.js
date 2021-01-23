@@ -1,7 +1,6 @@
 import React from "react"
 
 import linkedin from "../../images/linkedin.png"
-import meetup from "../../images/meetup.png"
 import facebook from "../../images/facebook.png"
 import instagram from "../../images/instagram.png"
 
@@ -48,15 +47,6 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <SocialIcon src={linkedin} alt="go to LinkedIn page" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.meetup.com/talentto/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SocialIcon src={meetup} alt="go to Meetup page" />
             </a>
           </li>
           <li>
