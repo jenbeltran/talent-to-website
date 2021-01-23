@@ -87,6 +87,10 @@ export const SocialIconList = styled.ul`
   @media screen and (min-width: ${tablet}px) {
     justify-content: flex-start;
   }
+
+  @media screen and (max-width: ${tablet}px) {
+    padding: 0;
+  }
 `
 
 export const SocialIcon = styled.img`

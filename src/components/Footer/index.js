@@ -4,7 +4,6 @@ import linkedin from "../../images/linkedin.png"
 import meetup from "../../images/meetup.png"
 import facebook from "../../images/facebook.png"
 import instagram from "../../images/instagram.png"
-import slack from "../../images/slack.png"
 
 import {
   SponsorUsSection,
@@ -53,15 +52,6 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="https://join.slack.com/t/talenttoworkspace/shared_invite/zt-fff9493n-BZqwpg7zT9a2ex4cQI4ziA"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SocialIcon src={slack} alt="go to Slack page" />
-            </a>
-          </li>
-          <li>
-            <a
               href="https://www.meetup.com/talentto/"
               target="_blank"
               rel="noopener noreferrer"
@@ -80,7 +70,7 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="hhttps://www.facebook.com/groups/301104044607323"
+              href="https://www.facebook.com/groups/301104044607323"
               target="_blank"
               rel="noopener noreferrer"
             >
