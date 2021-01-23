@@ -36,8 +36,8 @@ export const CardTextSection = styled.div`
     position: relative;
     height: 400px;
     width: 700px;
-    margin-left: 32rem;
-    margin-right: 6.25rem;
+    margin-left: 30rem;
+    margin-right: 5rem;
     transform: translateY(1.5rem);
     padding: 3rem;
   }

@@ -1,6 +1,10 @@
 import React from "react"
 
 import linkedin from "../../images/linkedin.png"
+import meetup from "../../images/meetup.png"
+import facebook from "../../images/facebook.png"
+import instagram from "../../images/instagram.png"
+import slack from "../../images/slack.png"
 
 import {
   SponsorUsSection,
@@ -9,6 +13,7 @@ import {
   FooterSection,
   JenInfo,
   StyledAnchor,
+  SocialIconList,
   SocialIcon,
 } from "./.css.js"
 
@@ -36,13 +41,53 @@ const Footer = () => {
           </StyledAnchor>
         </JenInfo>
 
-        <a
-          href="https://www.linkedin.com/company/talentto/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SocialIcon src={linkedin} />
-        </a>
+        <SocialIconList>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/talentto/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SocialIcon src={linkedin} alt="go to LinkedIn page" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://join.slack.com/t/talenttoworkspace/shared_invite/zt-fff9493n-BZqwpg7zT9a2ex4cQI4ziA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SocialIcon src={slack} alt="go to Slack page" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.meetup.com/talentto/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SocialIcon src={meetup} alt="go to Meetup page" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/talent_to/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SocialIcon src={instagram} alt="go to Instagram page" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="hhttps://www.facebook.com/groups/301104044607323"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SocialIcon src={facebook} alt="go to Facebook page" />
+            </a>
+          </li>
+        </SocialIconList>
       </FooterSection>
     </div>
   )

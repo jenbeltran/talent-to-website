@@ -79,12 +79,22 @@ export const StyledAnchor = styled.a`
     cursor: pointer;
   }
 `
+export const SocialIconList = styled.ul`
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+
+  @media screen and (min-width: ${tablet}px) {
+    justify-content: flex-start;
+  }
+`
 
 export const SocialIcon = styled.img`
   height: 35px;
+  width: 35px;
   padding: 1rem;
 
   @media (min-width: ${tablet}px) {
-    padding-right: 3rem;
+    padding-right: 2rem;
   }
 `
